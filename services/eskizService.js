@@ -10,9 +10,7 @@ class EskizService {
         this.tokenExpiresAt = null;
     }
 
-    /**
-     * Login to Eskiz.uz and get authentication token
-     */
+    
     async login() {
         try {
             const response = await axios.post(`${this.baseURL}/auth/login`, {
