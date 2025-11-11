@@ -20,7 +20,6 @@ class EskizService {
 
             if (response.data && response.data.data && response.data.data.token) {
                 this.token = response.data.data.token;
-                // Token expires in 30 days, set expiry to 29 days from now
                 this.tokenExpiresAt = Date.now() + (29 * 24 * 60 * 60 * 1000);
                 console.log('✅ Successfully logged in to Eskiz.uz');
                 return this.token;
