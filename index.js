@@ -9,7 +9,7 @@ dotenv.config();
 
 // Initialize Express app
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
@@ -148,8 +148,8 @@ app.use((error, req, res, next) => {
 });
 
 // Start server
-app.listen(5000, "0.0.0.0", () => {
-    console.log("Server running...");
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server running on port ${PORT}...`);
 });
 
 module.exports = app;
