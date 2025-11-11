@@ -1,0 +1,78 @@
+### Test qilish uchun misollar
+### Bu faylni VS Code REST Client extension bilan ishlatishingiz mumkin
+
+### 1. Barcha mavjud tillarni ko'rish
+GET http://localhost:3000/api/sms/languages
+
+###
+
+### 2. Rus tili shablonini ko'rish
+GET http://localhost:3000/api/sms/template/rus
+
+###
+
+### 3. Ingliz tili shablonini ko'rish
+GET http://localhost:3000/api/sms/template/ingliz
+
+###
+
+### 4. Bitta raqamga RUS TILI reklamasini yuborish
+POST http://localhost:3000/api/sms/send
+Content-Type: application/json
+
+{
+  "phone": "998901234567",
+  "language": "rus"
+}
+
+###
+
+### 5. Bitta raqamga INGLIZ TILI reklamasini yuborish
+POST http://localhost:3000/api/sms/send
+Content-Type: application/json
+
+{
+  "phone": "998912345678",
+  "language": "ingliz"
+}
+
+###
+
+### 6. Bitta raqamga TURK TILI reklamasini yuborish
+POST http://localhost:3000/api/sms/send
+Content-Type: application/json
+
+{
+  "phone": "998901234567",
+  "language": "turk"
+}
+
+###
+
+### 7. Ko'p raqamlarga RUS TILI reklamasini yuborish
+POST http://localhost:3000/api/sms/send-batch
+Content-Type: application/json
+
+{
+  "phones": [
+    "998901234567",
+    "998912345678",
+    "998923456789"
+  ],
+  "language": "rus"
+}
+
+###
+
+### 8. Balansni tekshirish
+GET http://localhost:3000/api/sms/balance
+
+###
+
+### 9. Server health check
+GET http://localhost:3000/health
+
+###
+
+### 10. API ma'lumotlari
+GET http://localhost:3000/
