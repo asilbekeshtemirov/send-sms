@@ -148,14 +148,8 @@ app.use((error, req, res, next) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-    console.log('='.repeat(50));
-    console.log(`🚀 SMS API Server ishga tushdi!`);
-    console.log(`📡 Port: ${PORT}`);
-    console.log(`🌐 URL: http://localhost:${PORT}`);
-    console.log(`📚 Swagger Docs: http://localhost:${PORT}/api-docs`);
-    console.log(`📋 API Info: http://localhost:${PORT}/`);
-    console.log('='.repeat(50));
+app.listen(5000, "0.0.0.0", () => {
+    console.log("Server running...");
 });
 
 module.exports = app;
