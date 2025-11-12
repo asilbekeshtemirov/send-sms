@@ -41,12 +41,8 @@ const options = {
         },
         servers: [
             {
-                url: `http://localhost:${process.env.PORT || 8080}`,
-                description: 'Development server'
-            },
-            {
-                url: 'https://your-production-url.com',
-                description: 'Production server'
+                url: '/',
+                description: 'Current server (auto-detected)'
             }
         ],
         tags: [
