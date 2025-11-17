@@ -4,7 +4,7 @@
  * @returns {string} SMS matni
  */
 function createUniversalTemplate(languageName) {
-    return `Bu Eskiz dan test`;
+    return `${languageName} KURSLARI! Professional o'qituvchilar, zamonaviy metodika. 3 oyda natija kafolatlangan! Chegirma: -30% To'lov: https://buy.ibrat.dev/?practicumId=6732f8e3d54ba225c726d947`;
 }
 
 /**
