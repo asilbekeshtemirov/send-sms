@@ -4,7 +4,7 @@
  * @returns {string} SMS matni
  */
 function createUniversalTemplate(languageName) {
-    return `${languageName} kurslari! 3 oyda natija. -30% chegirma. To'lov: https://buy.ibrat.dev/?practicumId=6732f8e3d54ba225c726d947`;
+    return `${languageName} kurslari! 3 oyda natija. PROMO: SALOM30 -30% chegirma. To'lov: https://q.me-qr.com/nFNxNYGL`;
 }
 
 /**
